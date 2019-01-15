@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>focus ononfocus</title>
+  <style>
+  span#del {
+    display: none;
+    height: 200px;
+    width: 200px; }
+
+input:focus + div span#del { display: block;
+    background: #f0a;
+}
+
+input + div span#del { display: block; 
+background: #000fff}
+
+  </style>
+ </head>
+<body>
+ <input type="text" value="Type your bananas!">
+<div><span id="del"></span></div>
+
+  
+</body>
+</html>
